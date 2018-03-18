@@ -1,0 +1,121 @@
+@import "./node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+@import "./node_modules/react-image-gallery/styles/scss/image-gallery-no-icon.scss";
+
+.portfolioBackground{
+    min-height: 228vh;
+    background-color: #eae7e7;
+    .portfilioImg{
+        min-height: 215vh;
+        background-image: url('../src/img/skill.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;        
+        padding-left: 15vw;
+        padding-right: 15vw;
+        padding-top: 10vh;
+        .portfolioBox{
+            min-height: 100vh;
+            .portfolioName{
+                min-height: 10vh;
+                text-align: center;
+                line-height: 10vh;
+                font-size: 37px;
+                font-family: monospace;
+                color: goldenrod;
+                text-shadow: 2px 2px 2px brown;
+            }
+            .portfolioSlide{
+                height: 80vh;
+                margin-top: 5vh;
+                .image-gallery-image img {
+                    height: 65vh;
+                }
+                .image-gallery-thumbnails a img{
+                    height: 12vh;
+                }
+            }
+        }
+        .portfolioColBox{
+            min-height: 110vh;
+            padding-left: 25vw;
+            padding-right: 25vw;
+            .portfolioSlide{
+                .image-gallery-image img {
+                    height: 75vh;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .portfolioBackground{
+        .portfilioImg{
+            .portfolioColBox{
+                padding-left: 20vw;
+                padding-right: 20vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .portfolioBackground{
+        .portfilioImg{
+            .portfolioColBox{
+                padding-left: 18vw;
+                padding-right: 18vw;
+            }
+        }
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .portfolioBackground{
+        min-height: 218vh;
+        .portfilioImg{
+            min-height: 215vh;
+            padding-left: 8vw;
+            padding-right: 8vw;
+            .portfolioColBox{
+                padding-left: 20vw;
+                padding-right: 20vw;
+                min-height: 100vh;
+                .portfolioName{
+                    font-size: 30px;
+                }
+                .portfolioSlide{
+                    .image-gallery-image img {
+                        height: 65vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 479px){
+    .portfolioBackground{
+        min-height: 218vh;
+        .portfilioImg{
+            background-attachment: inherit;
+            min-height: 215vh;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            .portfolioColBox{
+                padding-left: 15vw;
+                padding-right: 15vw;
+                min-height: 100vh;
+                .portfolioName{
+                    font-size: 30px;
+                }
+                .portfolioSlide{
+                    .image-gallery-image img {
+                        height: 65vh;
+                    }
+                }
+            }
+        }
+    }
+}

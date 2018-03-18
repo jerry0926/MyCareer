@@ -1,0 +1,119 @@
+.introBackground{
+    min-height: 92vh;
+    background-image: url('../src/img/introduction.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    #introductionBox{
+        display: none;
+        height: 60vh;
+        width: 40vw;
+        position: absolute;
+        top: 22vh;
+        left: 7vw;
+        padding-right: 2vw;
+        .smallButton{
+            display: none;
+        }
+    }
+    .myIntroduction{
+        text-align: center;
+        color: #d4b97b;
+        font-size: 30px;
+        letter-spacing: 4px;
+        text-shadow: 2px 2px 2px #6b6563;
+        font-family: serif;
+        text-indent: 2vw;
+        #hi{
+            font-size: 70px;
+        }
+    }
+    .button{
+        top:2vh;
+        left:9vw;
+        .visible{
+            font-family: serif;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .introBackground{
+        #introductionBox{
+            top: 26vh;
+        }
+        .myIntroduction{
+            font-size: 27px;
+            #hi{
+                font-size: 65px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .introBackground{
+        #introductionBox{
+            top: 22vh;
+            left: 5vw;
+        }
+        .myIntroduction{
+            font-size: 25px;
+            #hi{
+                font-size: 55px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .introBackground{
+        #introductionBox{
+            top: 25vh;
+            left: 10vw;
+            width: 80vw;
+            padding-right: 0;
+            .button{
+                left: 5vw;
+                top: 8vh;
+            }
+        }
+        .myIntroduction{
+            font-size: 25px;
+            #hi{
+                font-size: 50px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 479px){
+    .introBackground{
+        background-attachment: inherit;
+        #introductionBox{
+            top: 28vh;
+            left: 10vw;
+            width: 80vw;
+            padding-right: 0;
+            .button{
+                left: 7vw;
+                top: 7vh;
+            }
+            .bigButton{
+                display: none;
+            }
+            .smallButton{
+                display: inline-block;
+            }
+        }
+        .myIntroduction{
+            font-size: 22px;
+            #hi{
+                font-size: 45px;
+            }
+        }
+    }
+}

@@ -1,0 +1,200 @@
+.aboutBackground{
+    min-height: 138vh;
+    position: relative;
+    .aboutPicture{
+        position: relative;
+        min-height: 125vh;
+        background-image: url('../src/img/resume.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-attachment: fixed;      
+        #myResume{
+            position: relative;
+            top: 15vh;
+            min-height: 90vh;
+            padding-left: 12vw;
+            padding-right: 12vw;
+            #myHeadShot{
+                margin-bottom: 5vh;
+            }
+            .ui.grid{
+                margin: 0;
+            }
+            .resumeText{
+                height: 56vh;
+                .textTitle{
+                    text-align: center;
+                    color: #eadbb6;
+                    font-size: 30px;
+                    letter-spacing: 4px;
+                    text-shadow: 2px 2px 2px #6b6563;
+                    font-family: serif;
+                    border-color: #9E9E9E;
+                    border-style: ridge;
+                    height: 10vh;
+                    line-height: 9vh;
+                    width: 60%;
+                    margin-left: 20%;
+                    background-color: #5f0909;
+                    border-radius: 10px;
+                }
+                .textCss{
+                    margin-top:10vh;
+                    text-align: center;
+                    color: #efe6d1;
+                    font-size: 23px;
+                    letter-spacing: 4px;
+                    text-shadow: 2px 2px 2px #6b6563;
+                    font-family: serif;
+                    text-indent: 2vw;
+                }
+                
+            }
+        }     
+    }
+    .ui.grid>.column:not(.row){
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .aboutBackground{
+        .aboutPicture{
+            #myResume{
+                padding-left: 5vw;
+                padding-right: 5vw;
+                .resumeText{
+                    .textTitle{
+                        font-size: 25px;
+                    }
+                    .textCss{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .aboutBackground{
+        .aboutPicture{
+            #myResume{
+                padding-left: 0vw;
+                padding-right: 0vw;
+                .resumeText{
+                    .textTitle{
+                        font-size: 22px;
+                    }
+                    .textCss{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .aboutBackground{
+        min-height: 168vh;
+        .aboutPicture{
+            min-height: 155vh;
+            #myResume{
+                min-height: 120vh;
+                padding-left: 0vw;
+                padding-right: 0vw;
+                top: 10vh;
+                .resumeText{
+                    .textTitle{
+                        width: 50%;
+                        margin-left: 25%;
+                        font-size: 22px;
+                    }
+                    .textCss{
+                        font-size: 20px;
+                        margin-top: 5vh;
+                    }
+                    .aboutColTwo{
+                        top:2vh;
+                    }
+                }
+            }
+        }
+        .ui.grid > .column:not(.row){
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 479px){
+    .aboutBackground{
+        min-height: 168vh;
+        .aboutPicture{
+            background-attachment: scroll;
+            min-height: 160vh;
+            #myResume{
+                min-height: 125vh;
+                padding-left: 0vw;
+                padding-right: 0vw;
+                top: 10vh;
+                .resumeText{
+                    .textTitle{
+                        width: 50%;
+                        margin-left: 25%;
+                        font-size: 22px;
+                    }
+                    .textCss{
+                        font-size: 19px;
+                        margin-top: 5vh;
+                    }
+                    .aboutColTwo{
+                        top:2vh;
+                    }
+                }
+            }
+        }
+        .ui.grid > .column:not(.row){
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+@media screen  and (max-width: 399px){
+    .aboutBackground{
+        min-height: 168vh;
+        .aboutPicture{
+            background-attachment: inherit;
+            min-height: 160vh;
+            #myResume{
+                min-height: 125vh;
+                padding-left: 0vw;
+                padding-right: 0vw;
+                top: 5vh;
+                .resumeText{
+                    .textTitle{
+                        width: 50%;
+                        margin-left: 25%;
+                        font-size: 19px;
+                    }
+                    .textCss{
+                        font-size: 18px;
+                        margin-top: 5vh;
+                    }
+                    .aboutColTwo{
+                        top:2vh;
+                    }
+                }
+            }
+        }
+        .ui.grid > .column:not(.row){
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}

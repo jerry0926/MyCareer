@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./assets/bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.js"></script>
+    <script>
+        var nowScroll = 0;
+        $(function () {
+            introductionAni(); //introduction 動畫
+            aboutAni(); //about 動畫
+            skillAni(); // skill 動畫
+            navbarAni();// 滾動導航欄動畫
+
+            $("#rwdHref").click(function () {
+                $('body').css('overflow-y', 'hidden');
+                $('.ui.sidebar').sidebar('toggle');
+                $('.ui.sidebar').sidebar({
+                    onHidden: function () {
+                        $('body').css('overflow-y', 'initial');
+                    }
+                });
+            });
+            $('.ui.sidebar').find('a.item').click(function () {
+                $('.ui.sidebar').sidebar('hide');
+            });
+        })
+        function introductionAni() {
+            $("#introductionBox").visibility({
+                onBottomVisible: function () {
+                    $("#introductionBox").transition('fade right', 2000);
+                }
+            });
+        }
+        function aboutAni() {
+            $(".textTitle").hide();
+            $(".textCss").hide();
+
+            $(".startButton").visibility({
+                onTopPassed: function () {
+                    $("#myHeadShot").transition('horizontal flip', 1000);
+                }
+            });
+            $("#aboutTitle").visibility({
+                onTopPassed: function () {
+                    $(".textTitle").transition('swing down', 1000);
+                },
+                onBottomPassed: function () {
+                    $(".textCss").transition('scale', 1000);
+                }
+            });
+        }
+        function skillAni() {
+            if ($('.equal.width.row').hasClass('skillRow1')) {
+                $(".skillRow1").visibility({
+                    onBottomVisible: function () {
+                        $('.skillContain .skillRow1 .row1').transition({
+                            animation: 'jiggle',
+                            duration: 800,
+                            interval: 200
+                        });
+                    }
+                });
+            }
+            if ($('.equal.width.row').hasClass('skillRow2')) {
+                $(".skillRow2").visibility({
+                    onBottomVisible: function () {
+                        $('.skillContain .skillRow2 .row2').transition({
+                            animation: 'jiggle',
+                            duration: 800,
+                            interval: 200
+                        });
+                    }
+                });
+            }
+            if ($('.equal.width.row').hasClass('skillRow3')) {
+                $(".skillRow3").visibility({
+                    onBottomVisible: function () {
+                        $('.skillContain .skillRow3 .row3').transition({
+                            animation: 'jiggle',
+                            duration: 800,
+                            interval: 200
+                        });
+                    }
+                });
+            }
+            if ($('.equal.width.row').hasClass('skillRow4')) {
+                $(".skillRow4").visibility({
+                    onBottomVisible: function () {
+                        $('.skillContain .skillRow4 .row4').transition({
+                            animation: 'jiggle',
+                            duration: 800,
+                            interval: 200
+                        });
+                    }
+                });
+            }
+            if ($('.equal.width.row').hasClass('skillRow5')) {
+                $(".skillRow5").visibility({
+                    onBottomVisible: function () {
+                        $('.skillContain .skillRow5 .row5').transition({
+                            animation: 'jiggle',
+                            duration: 800,
+                            interval: 200
+                        });
+                    }
+                });
+            }
+            if ($('.equal.width.row').hasClass('skillRow6')) {
+                $(".skillRow6").visibility({
+                    onBottomVisible: function () {
+                        $('.skillContain .skillRow6 .row6').transition({
+                            animation: 'jiggle',
+                            duration: 800,
+                            interval: 200
+                        });
+                    }
+                });
+            }
+        }
+        function navbarAni() {
+            $(window).scroll(function () {
+                var scrollVal = $(this).scrollTop();
+                var headerHeight = $("#header").height();
+                if (scrollVal > headerHeight) {
+                    if (nowScroll == 0) {
+                        $('#header').transition({
+                            animation: 'fade down',
+                            duration: 800
+                        });
+                        nowScroll = 1;
+                    }
+                }
+                else {
+                    if (nowScroll == 1) {
+                        $('#header').transition({
+                            animation: 'fade down',
+                            duration: 800
+                        });
+                        nowScroll = 0;
+                    }
+                }
+            });
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="page"></div>
+    <script src='./assets/bundle.js'></script>
+    <script src='./assets/vendors.js'></script>
+</body>
+
+</html>

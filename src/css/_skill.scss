@@ -1,0 +1,108 @@
+.skillBackground{
+    min-height: 118vh;
+    background-color: #eae7e7;
+    .skillContain{
+        min-height: 105vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        .skillTable{
+            min-height: 95vh;
+            .column{
+                text-align: center;
+                color: darkslateblue;
+                font-family: sans-serif;
+                font-size: 22px;
+                height: 10vh;
+                line-height: 10vh;
+                .skillBox{
+                    height: 10vh;
+                    border-radius: 10px;
+                    line-height: 10vh;
+                    background-color: white;
+                    .skillImg{
+                        position: absolute;
+                        top: 1vh;
+                        height: 8vh;
+                        width: auto;
+                        display: block;
+                        margin-left: 1vw;
+                    }
+                    .skillName{
+                        margin-left: 4vw;
+                    }
+                }
+            }
+        }
+        .ui.grid>.row>.column{
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+        .ui.grid.container{
+            width: auto!important
+        }
+    }
+
+    .ui.grid{
+        margin: 0;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .skillBackground{
+        .skillContain{
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+    }    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .skillBackground{
+        min-height: 138vh;
+        .skillContain{
+            min-height: 125vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            .skillTable{
+                min-height: 115vh;
+            }
+        }
+    }    
+}
+
+@media screen and (min-width: 479px) and (max-width: 767px){
+    .skillBackground{
+        min-height: 158vh;
+        .skillContain{
+            min-height: 145vh;
+            padding-left: 0vw;
+            padding-right: 0vw;
+            .skillTable{
+                min-height: 135vh;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 478px){
+    .skillBackground{
+        min-height: 158vh;
+        .skillContain{
+            min-height: 145vh;
+            padding-left: 0vw;
+            padding-right: 0vw;
+            .skillTable{
+                min-height: 135vh;
+                .column {
+                    .skillBox {
+                        .skillName{
+                            margin-left: 10vw;
+                            font-size: 18px
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

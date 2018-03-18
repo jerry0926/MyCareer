@@ -1,0 +1,49 @@
+.footerBackground{
+    min-height: 18vh;
+    background-color: #141b40;
+    .footerContain{
+        min-height: 18vh;
+        .footerBox{
+            min-height: 6vh;
+            padding-left: 5vw;
+            .honorTextIcon{
+                color: wheat;
+                font-size: 1.5em;
+                margin: 0.75rem 0 0;
+            }
+            .footerText{
+                display: inline;
+                margin-left: 3vw;
+                color: wheat;
+            }
+        }
+        .footerFbBox{
+            min-height: 9vh;
+            text-align: center;
+            .honorFbIcon{
+                font-size: 2.5em;
+                margin: 1.5rem 0 0 1vw;
+                color: white;
+            }
+        }
+    }
+    .ui.grid>.column:not(.row){
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .footerBackground{
+        .footerContain{
+            .footerBox{
+                padding-left: 0;
+            }
+        }
+        .ui.grid>.column:not(.row){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    
+}

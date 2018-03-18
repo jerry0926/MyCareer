@@ -1,0 +1,48 @@
+@import "header";
+@import "introduction";
+@import "about";
+@import "skill";
+@import "portfolio";
+@import "honor";
+@import "footer";
+
+.title{
+    color: #464646;
+    height: 13vh;
+    text-align: center;
+    line-height: 13vh;
+    font-size: 40px;
+    background-color: white;
+    text-shadow: 2px 2px 4px #524747;
+    letter-spacing: 3px;
+    font-family: serif;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .title{
+        font-size: 36px;
+        height: 11vh;
+        line-height: 11vh;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .title{
+        font-size: 34px;
+        height: 11vh;
+        line-height: 11vh;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .title{
+        font-size: 30px;
+        height: 10vh;
+        line-height: 10vh;
+    }
+}
+@media screen and (max-width: 479px){
+    .title{
+        font-size: 26px;
+        height: 9vh;
+        line-height: 9vh;
+    }
+}

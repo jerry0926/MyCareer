@@ -1,0 +1,132 @@
+.honorBackground{
+    min-height: 173vh;
+    background-color: #eae7e7;
+    .honorContain{
+        min-height: 160vh;
+        padding-top: 10vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 10vh;
+        .ui.grid>.row>.column{
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+        .ui.grid.container{
+            width: auto!important
+        }
+        .honorTable{
+            min-height: 140vh;
+            .honorRow1{
+                min-height: 50vh;
+            }
+            .honorRow2{
+                min-height: 70vh;
+                margin-top: 10vh;
+                .honorColImg{
+                    height: 70vh;
+                }
+            }
+            .honorText{
+                text-align: center;
+                font-size: 18px;
+                margin-top: 3vh;
+                font-weight: bold;
+                color: darkslategray;
+                letter-spacing: 1px;
+                font-family: initial;
+            }
+        }
+        .ui.grid>.row{
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .ui.grid .centered.row>.column:not(.aligned):not(.justified){
+            text-align: center;
+        }
+    }
+    .ui.grid{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .honorBackground{
+        min-height: 223vh;
+        .honorContain{
+            min-height: 210vh;
+            .honorTable{
+                min-height: 190vh;
+                .honorRow2, .honorRow3{
+                    min-height: 60vh;
+                    margin-top: 10vh;
+                    .honorColImg{
+                        height: 60vh;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .honorBackground{
+        min-height: 343vh;
+        .honorContain{
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            min-height: 330vh;
+            .honorTable{
+                min-height: 320vh;
+                .honorRow1, .honorRow2, .honorRow3{
+                    margin-top: 10vh;
+                    min-height: 40vh;
+                    .honorRowImg{
+                        height: 40vh;
+                        width: 65vw;
+                    }
+                }
+                .honorRow4, .honorRow5, .honorRow6{
+                    min-height: 50vh;
+                    margin-top: 10vh;
+                    .honorColImg{
+                        height: 60vh;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 479px){
+    .honorBackground{
+        min-height: 343vh;
+        .honorContain{
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+            min-height: 330vh;
+            .honorTable{
+                min-height: 320vh;
+                .honorText{
+                    font-size:15px;
+                }
+                .honorRow1, .honorRow2, .honorRow3{
+                    margin-top: 10vh;
+                    min-height: 40vh;
+                    .honorRowImg{
+                        height: 40vh;
+                        width: 85vw;
+                    }
+                }
+                .honorRow4, .honorRow5, .honorRow6{
+                    min-height: 50vh;
+                    margin-top: 10vh;
+                    .honorColImg{
+                        height: 60vh;
+                    }
+                }
+            }
+        }
+    }    
+}
