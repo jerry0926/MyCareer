@@ -39,14 +39,14 @@ class About extends React.Component {
                                     <p className="textCss">
                                         Hi! My name is Jerry. I hold a bachelor's degree with
                                         a major in Computer Science and Information Engineering which was awarded to me by
-                                        National Taiwan Ocean University in keelung in 2018. And now I'm 23 years old, live
+                                        National Taiwan Ocean University in keelung in 2018. And now I'm 24 years old, live
                                         in Taiwan Taoyuan city.
                                 </p>
                                 </div>
                                 <div className="sixteen wide column aboutColTwo">
                                     <p className="textTitle">Interest</p>
                                     <p className="textCss">
-                                        I enjoy outdoor activities and music, I think the life can't live without both of this two. And talk about
+                                        I enjoy outdoor activities and music, I think the life can't live without both of them. And talk about
                                         my profession, I'm interested in Front End Engineering Design, I can fell fulfilled when I
                                         complete a Web design, so I will keep enhancing my skill in this field.
                                 </p>
