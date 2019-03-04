@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import ImageGallery from 'react-image-gallery';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
